@@ -82,10 +82,10 @@ require (
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0-20170531160350-a96e63847dc3 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 	gopkg.in/yaml.v2 v2.2.1 // indirect
-	k8s.io/api v0.0.0-20180628040859-072894a440bd
-	k8s.io/apimachinery v0.0.0-20180621070125-103fd098999d
-	k8s.io/apiserver v0.0.0-20180628044425-01459b68eb5f
-	k8s.io/client-go v8.0.0+incompatible
+	k8s.io/api v0.0.0-20180904230853-4e7be11eab3f
+	k8s.io/apimachinery v0.0.0-20180904193909-def12e63c512
+	k8s.io/apiserver v0.0.0-20180910083620-386115dd78fd
+	k8s.io/client-go v2.0.0-alpha.0.0.20180910083459-2cefa64ff137+incompatible
 	k8s.io/kube-openapi v0.0.0-20180731170545-e3762e86a74c // indirect
-	k8s.io/metrics v0.0.0-20180718014405-6efa0bfaa5c1
+	k8s.io/metrics v0.0.0-20180910084238-9aa1ab0459f0
 )
