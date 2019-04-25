@@ -83,6 +83,8 @@ func (g *JSONPathMetricsGetter) GetMetric(pod *v1.Pod) (float64, error) {
 		return float64(res), nil
 	case float64:
 		return res, nil
+	case string:
+		return strconv.ParseFloat(res, 64)
 	default:
 		return 0, fmt.Errorf("unsupported type %T", res)
 	}
