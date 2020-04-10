@@ -9,6 +9,8 @@ logLevel: 1
 enableCustomMetricsApi: false
 enableExternalMetricsApi: true
 
+enableHostNetwork: true
+
 # Url to access prometheus
 prometheus:
   url:
