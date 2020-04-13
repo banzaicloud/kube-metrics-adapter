@@ -18,7 +18,7 @@ This command deploys the kube-metrics-adapter with the default configuration. Th
 
 ## Using the Chart
 
-[kube-metrics-adapter](https://github.com/banzaicloud/kube-metrics-adapter) can be configure to use several different collectors. Currently this chart supports only configuration of Prometheus collector. Ensure the `prometheus.url` and `prometheus.port` are configured with the correct Prometheus service endpoint. To configure your Horizontal Pod Autoscaler to use the custom metric, see the custom metrics section of the [HPA walkthrough](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#autoscaling-on-multiple-metrics-and-custom-metrics).
+[kube-metrics-adapter](https://github.com/banzaicloud/kube-metrics-adapter) can be configure to use several different collectors. Currently this chart supports only configuration of Prometheus collector. Ensure the `prometheus.url` is configured with the correct Prometheus service endpoint (ex. `http://prometheus.my-namespace.svc`). To configure your Horizontal Pod Autoscaler to use the custom metric, see the custom metrics section of the [HPA walkthrough](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#autoscaling-on-multiple-metrics-and-custom-metrics).
 
 ## Uninstalling the Chart
 
