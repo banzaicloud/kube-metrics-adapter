@@ -11,6 +11,7 @@ Kubernetes 1.12+
 To install the chart with the release name `my-release`:
 
 ```console
+$ helm repo add banzaicloud-stable https://kubernetes-charts.banzaicloud.com
 $ helm install --name my-release banzaicloud-stable/kube-metrics-adapter
 ```
 
