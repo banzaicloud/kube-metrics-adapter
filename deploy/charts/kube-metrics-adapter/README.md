@@ -11,7 +11,7 @@ Kubernetes 1.12+
 To install the chart with the release name `my-release`:
 
 ```console
-$ helm install --name my-release stable/kube-metrics-adapter
+$ helm install --name my-release banzaicloud-stable/kube-metrics-adapter
 ```
 
 This command deploys the kube-metrics-adapter with the default configuration. The [configuration](#configuration) section lists the parameters that can be configured during installation.
