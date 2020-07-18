@@ -6,7 +6,7 @@ image:
 
 logLevel: 1
 
-enableCustomMetricsApi: false
+enableCustomMetricsApi: true
 enableExternalMetricsApi: true
 
 enableHostNetwork: false
