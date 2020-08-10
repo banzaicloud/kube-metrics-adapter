@@ -70,3 +70,12 @@ aws:
   enable: false
   # comma separated list of AWS regions where your SQS queues are deployed
   region: us-west-2
+
+influxdb:
+  enable: false
+  # The URL for InfluxDB, e.g. http://localhost:9999
+  url:
+  # The token for InfluxDB access
+  token:
+  # Organization ID for InfluxDB 2.x server to query
+  org:
