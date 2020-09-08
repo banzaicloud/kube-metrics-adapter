@@ -44,6 +44,11 @@ spec:
         {{- if .Values.prometheus.url }}
         - --prometheus-server={{ .Values.prometheus.url }}
         {{- end}}
+        {{- if .Values.influxdb.enable }}
+        - --influxdb-address={{ .Values.influxdb.url }}
+        - --influxdb-token={{ .Values.influxdb.token }}
+        - --influxdb-org={{ .Values.influxdb.org }}
+        {{- end }}
         {{- if .Values.tls.enable }}
         - --tls-cert-file=/var/run/serving-cert/tls.crt
         - --tls-private-key-file=/var/run/serving-cert/tls.key

@@ -18,7 +18,7 @@ This command deploys the kube-metrics-adapter with the default configuration. Th
 
 ## Using the Chart
 
-[kube-metrics-adapter](https://github.com/banzaicloud/kube-metrics-adapter) can be configure to use several different collectors. Currently this chart supports only configuration of Prometheus collector. Ensure the `prometheus.url` and `prometheus.port` are configured with the correct Prometheus service endpoint. To configure your Horizontal Pod Autoscaler to use the custom metric, see the custom metrics section of the [HPA walkthrough](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#autoscaling-on-multiple-metrics-and-custom-metrics).
+[kube-metrics-adapter](https://github.com/banzaicloud/kube-metrics-adapter) can be configure to use several different collectors. Currently this chart supports only configuration of Prometheus and InfluxDB collectors. Ensure the `prometheus.url` and `prometheus.port` are configured with the correct Prometheus service endpoint. To configure your Horizontal Pod Autoscaler to use the custom metric, see the custom metrics section of the [HPA walkthrough](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/#autoscaling-on-multiple-metrics-and-custom-metrics).
 
 ## Uninstalling the Chart
 
@@ -47,7 +47,7 @@ The following table lists the configurable parameters of the Prometheus Adapter 
 | `enableExternalMetricsApi`                  | Enable External Metrics APIService                                                 | `true`                                        |
 | `prometheus.url`                | Url of where we can find the Prometheus service                                 | ``             |
 | `rbac.create`                   | If true, create & use RBAC resources                                            | `true`                                      |
-| `resources`                     | CPU/Memory resource requests/limits                                             | `{}`                                        |                                                                                                        
+| `resources`                     | CPU/Memory resource requests/limits                                             | `{}`                                        |
 | `service.annotations`           | Annotations to add to the service                                               | `{}`                                        |
 | `adapter.podAnnotations`        | Annotations to add to the pods                                                  | `{}`                                        |
 | `enableHostNetwork`             | Enable host network for adapter                                                 | `false`                                      |
@@ -66,6 +66,10 @@ The following table lists the configurable parameters of the Prometheus Adapter 
 | `aws.region`                    | Comma separated list of AWS regions (ignored if aws.enable=false)               | `us-west-2`                                 |
 | `tolerations`                   | List of node taints to tolerate                                                 | `[]`                                        |
 | `pspEnabled`                    | enabel PSP resources                                                            | false                                       |
+| `influxdb.enabled`              | enable InfluxDB                                                                 | false                                       |
+| `influxdb.url                   | the URL of the InfluxDB server                                                  | ``                                          |
+| `influxdb.token`                | the Token used to access InfluxDB                                               | ``                                          |
+| `influxdb.org`                  | the organization used when accessing InfluxDB                                   | ``                                          |
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
 ```console
