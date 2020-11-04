@@ -38,7 +38,7 @@ The following table lists the configurable parameters of the Prometheus Adapter 
 | ------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------|
 | `affinity`                      | Node affinity                                                                   | `{}`                                        |
 | `image.repository`              | Image repository                                                                | `banzaicloud/kube-metrics-adapter`          |
-| `image.tag`                     | Image tag                                                                       | `0.1.1-bzn`                                     |
+| `image.tag`                     | Image tag                                                                       | `0.1.1-bnz`                                     |
 | `image.pullPolicy`              | Image pull policy                                                               | `IfNotPresent`                              |
 | `image.pullSecrets`             | Image pull secrets                                                              | `[]`                                        |
 | `logLevel`                      | Log level                                                                       | `4`                                         |
